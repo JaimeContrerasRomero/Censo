@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29215.179
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Censo", "Censo\Censo.csproj", "{923A991C-9AEF-45C0-93B6-B37A3D1F493A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CensoWF", "CensoWF\CensoWF.csproj", "{76848484-36FE-41EF-9144-17418F84A9BD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{923A991C-9AEF-45C0-93B6-B37A3D1F493A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{923A991C-9AEF-45C0-93B6-B37A3D1F493A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{923A991C-9AEF-45C0-93B6-B37A3D1F493A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{923A991C-9AEF-45C0-93B6-B37A3D1F493A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{76848484-36FE-41EF-9144-17418F84A9BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{76848484-36FE-41EF-9144-17418F84A9BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{76848484-36FE-41EF-9144-17418F84A9BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{76848484-36FE-41EF-9144-17418F84A9BD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1CDB67E3-7464-47AE-A9AD-A98CA476A5BD}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,178 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="SCModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Censo">
+          <Key>
+            <PropertyRef Name="IdCenso" />
+          </Key>
+          <Property Name="IdCenso" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="FotoT" Type="image" />
+          <Property Name="NombreT" Type="varchar" MaxLength="200" Nullable="false" />
+          <Property Name="EdadT" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="SexoT" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="TelefonoT" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="CelularT" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="EmailT" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="DomicilioT" Type="varchar" MaxLength="200" Nullable="false" />
+          <Property Name="EstadoCivilT" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="HijosT" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="EdadHijos" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="ActividadT" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="HorarioT" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="EnfermedadT" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="FotoD" Type="image" />
+          <Property Name="NombreD" Type="varchar" MaxLength="100" Nullable="false" />
+          <Property Name="PrimerApellidoD" Type="varchar" MaxLength="100" Nullable="false" />
+          <Property Name="SegundoApellidoD" Type="varchar" MaxLength="100" />
+          <Property Name="FechaNacD" Type="date" />
+          <Property Name="SexoD" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="InstitucionD" Type="varchar" MaxLength="200" Nullable="false" />
+          <Property Name="DiscapacidadD" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="DiscapacidadOtraD" Type="varchar" MaxLength="200" Nullable="false" />
+          <Property Name="PadecimientoD" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="PadecimientoOtroD" Type="varchar" MaxLength="200" Nullable="false" />
+          <Property Name="RevisionD" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="TerapiaD" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="TerapiaRecibeD" Type="varchar" MaxLength="200" Nullable="false" />
+          <Property Name="TerapiaEducativaD" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="EscuelaD" Type="varchar" MaxLength="200" Nullable="false" />
+          <Property Name="ApoyoSocialD" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="CualApoyo" Type="varchar" MaxLength="200" Nullable="false" />
+          <Property Name="Actividades" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="OtraActividad" Type="varchar" MaxLength="200" Nullable="false" />
+          <Property Name="PlaticaHigiene" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="PlaticaSexual" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Trabajar" Type="varchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <EntityContainer Name="SCModelStoreContainer">
+          <EntitySet Name="Censo" EntityType="Self.Censo" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="SCModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Censo">
+          <Key>
+            <PropertyRef Name="IdCenso" />
+          </Key>
+          <Property Name="IdCenso" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="FotoT" Type="Binary" MaxLength="Max" FixedLength="false" />
+          <Property Name="NombreT" Type="String" MaxLength="200" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="EdadT" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="SexoT" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="TelefonoT" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="CelularT" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="EmailT" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="DomicilioT" Type="String" MaxLength="200" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="EstadoCivilT" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="HijosT" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="EdadHijos" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="ActividadT" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="HorarioT" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="EnfermedadT" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="FotoD" Type="Binary" MaxLength="Max" FixedLength="false" />
+          <Property Name="NombreD" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="PrimerApellidoD" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="SegundoApellidoD" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="FechaNacD" Type="DateTime" Precision="0" />
+          <Property Name="SexoD" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="InstitucionD" Type="String" MaxLength="200" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="DiscapacidadD" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="DiscapacidadOtraD" Type="String" MaxLength="200" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="PadecimientoD" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="PadecimientoOtroD" Type="String" MaxLength="200" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="RevisionD" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="TerapiaD" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="TerapiaRecibeD" Type="String" MaxLength="200" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="TerapiaEducativaD" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="EscuelaD" Type="String" MaxLength="200" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="ApoyoSocialD" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="CualApoyo" Type="String" MaxLength="200" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Actividades" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="OtraActividad" Type="String" MaxLength="200" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="PlaticaHigiene" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="PlaticaSexual" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Trabajar" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+        </EntityType>
+        <EntityContainer Name="SCEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Censo" EntityType="Self.Censo" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="SCModelStoreContainer" CdmEntityContainer="SCEntities">
+          <EntitySetMapping Name="Censo">
+            <EntityTypeMapping TypeName="SCModel.Censo">
+              <MappingFragment StoreEntitySet="Censo">
+                <ScalarProperty Name="IdCenso" ColumnName="IdCenso" />
+                <ScalarProperty Name="FotoT" ColumnName="FotoT" />
+                <ScalarProperty Name="NombreT" ColumnName="NombreT" />
+                <ScalarProperty Name="EdadT" ColumnName="EdadT" />
+                <ScalarProperty Name="SexoT" ColumnName="SexoT" />
+                <ScalarProperty Name="TelefonoT" ColumnName="TelefonoT" />
+                <ScalarProperty Name="CelularT" ColumnName="CelularT" />
+                <ScalarProperty Name="EmailT" ColumnName="EmailT" />
+                <ScalarProperty Name="DomicilioT" ColumnName="DomicilioT" />
+                <ScalarProperty Name="EstadoCivilT" ColumnName="EstadoCivilT" />
+                <ScalarProperty Name="HijosT" ColumnName="HijosT" />
+                <ScalarProperty Name="EdadHijos" ColumnName="EdadHijos" />
+                <ScalarProperty Name="ActividadT" ColumnName="ActividadT" />
+                <ScalarProperty Name="HorarioT" ColumnName="HorarioT" />
+                <ScalarProperty Name="EnfermedadT" ColumnName="EnfermedadT" />
+                <ScalarProperty Name="FotoD" ColumnName="FotoD" />
+                <ScalarProperty Name="NombreD" ColumnName="NombreD" />
+                <ScalarProperty Name="PrimerApellidoD" ColumnName="PrimerApellidoD" />
+                <ScalarProperty Name="SegundoApellidoD" ColumnName="SegundoApellidoD" />
+                <ScalarProperty Name="FechaNacD" ColumnName="FechaNacD" />
+                <ScalarProperty Name="SexoD" ColumnName="SexoD" />
+                <ScalarProperty Name="InstitucionD" ColumnName="InstitucionD" />
+                <ScalarProperty Name="DiscapacidadD" ColumnName="DiscapacidadD" />
+                <ScalarProperty Name="DiscapacidadOtraD" ColumnName="DiscapacidadOtraD" />
+                <ScalarProperty Name="PadecimientoD" ColumnName="PadecimientoD" />
+                <ScalarProperty Name="PadecimientoOtroD" ColumnName="PadecimientoOtroD" />
+                <ScalarProperty Name="RevisionD" ColumnName="RevisionD" />
+                <ScalarProperty Name="TerapiaD" ColumnName="TerapiaD" />
+                <ScalarProperty Name="TerapiaRecibeD" ColumnName="TerapiaRecibeD" />
+                <ScalarProperty Name="TerapiaEducativaD" ColumnName="TerapiaEducativaD" />
+                <ScalarProperty Name="EscuelaD" ColumnName="EscuelaD" />
+                <ScalarProperty Name="ApoyoSocialD" ColumnName="ApoyoSocialD" />
+                <ScalarProperty Name="CualApoyo" ColumnName="CualApoyo" />
+                <ScalarProperty Name="Actividades" ColumnName="Actividades" />
+                <ScalarProperty Name="OtraActividad" ColumnName="OtraActividad" />
+                <ScalarProperty Name="PlaticaHigiene" ColumnName="PlaticaHigiene" />
+                <ScalarProperty Name="PlaticaSexual" ColumnName="PlaticaSexual" />
+                <ScalarProperty Name="Trabajar" ColumnName="Trabajar" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="Ninguno" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
